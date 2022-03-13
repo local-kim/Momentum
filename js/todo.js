@@ -1,6 +1,6 @@
-const todoForm = document.querySelector("#todo-form");
+// const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-form input");
-const todoList = document.querySelector("#todo-list");
+// const todoList = document.querySelector("#todo-list");
 
 const TODOS_KEY = "todos";
 
@@ -23,7 +23,7 @@ function paintTodo(todo){
   const span = document.createElement("span");
   span.innerText = todo.text;
   const button = document.createElement("button");
-  button.innerText = "✖️";
+  button.innerText = "✕";
   button.addEventListener("click", deleteTodo);
 
   li.appendChild(span);
